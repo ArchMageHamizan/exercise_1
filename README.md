@@ -1,2 +1,2 @@
 # exercise_1
-# rock paper scissior game
+# rock paper scissor game

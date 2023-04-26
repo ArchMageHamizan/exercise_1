@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Rock Paper Scissor</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+   
+
+</head>
+<body>
+     
+    <h3>Rock paper scissor game</h3>
+    <p>Choose your weapon:</p>
+    <select id="dropdown" onchange="getSelectValue();">
+        <option value="rock">rock</option>
+        <option value="paper">paper</option>
+        <option value="scissors">scissor</option>
+    </select>
+    
+    <br>
+    <p>Player Choice: </p>
+    <p id="player" class="">value</p>
+    <br>
+    <p>Computer Choice: </p>
+    <p id="computer" class="">value</p>
+    <br>
+    <p id="result"   class="">WIN/LOSE</p>
+    <br>
+    <p id="p" onchange="getSelectValue()">Result</p><p>, </p>
+    <p id="c" onchange="getComputerChoice()">Result</p>
+    <script src='javaScript.js'></script>
+</body>
+</html>
