@@ -7,9 +7,11 @@
    
 
 </head>
-<body>
+<body >
      
     <h3>Rock paper scissor game</h3>
+    <p>Round: </p><p id="roundValue" onchange="game()">0</p>
+    <br>
     <p>Choose your weapon:</p>
     <select id="dropdown" onchange="getSelectValue();">
         <option value="rock">rock</option>
@@ -24,10 +26,16 @@
     <p>Computer Choice: </p>
     <p id="computer" class="">value</p>
     <br>
-    <p id="result"   class="">WIN/LOSE</p>
+    <p>Result: </p>
     <br>
-    <p id="p" onchange="getSelectValue()">Result</p><p>, </p>
-    <p id="c" onchange="getComputerChoice()">Result</p>
+    <p id="result"   class="result">WIN/LOSE</p>
+    <br>
+    <p id="p" onchange="getSelectValue()" class="result">Result</p><p> vs </p>
+    <p id="c" onchange="getComputerChoice()" class="result">Result</p>
+    <br>
+    <p id="roundResult"  class="result" onchange="game()">0 - 0</p>
+    <br>
+    <p id="finalResult"  class="result" onchange="getSelectValue"></p>
     <script src='javaScript.js'></script>
 </body>
 </html>
